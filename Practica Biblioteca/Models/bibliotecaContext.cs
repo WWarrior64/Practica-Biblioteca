@@ -7,7 +7,9 @@ namespace Practica_Biblioteca.Models
 	{
 		public bibliotecaContext(DbContextOptions<bibliotecaContext> options) : base(options) 
 		{
-			
+
 		}
-	}
+        public DbSet<Libro> Libro { get; set; }
+        public DbSet<Autor> Autor { get; set; }
+    }
 }
